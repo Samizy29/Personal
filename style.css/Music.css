@@ -1,0 +1,161 @@
+/* Existing styles (unchanged) */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(to right, #000046, #1cb5e0);
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+section {
+  display: none;
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+section#home {
+  display: block;
+}
+
+h1, h2, h3 {
+  color: #111;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #00c9ff 0%, #92fe9d 100%);
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #92fe9d 0%, #00c9ff 100%);
+  transform: scale(1.05);
+}
+
+.course {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fafafa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(to right, #1cb5e0, #000046);
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  top: 1.25rem;
+  right: 1rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    width: 100%;
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul.show {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Form styles */
+form label {
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+form button.btn {
+  margin-top: 1rem;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Mastery Courses</title>
+  <link rel="stylesheet" href="music.js/Music.js" />]
+   <link rel="stylesheet" href="style.css/Music.css" />
+</head>
+<body>
+  <header>
+    <h1>Music Mastery</h1>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Unlock Your Musical Potential</h2>
+    <p>Join our online music courses and master music theory, production, and instruments from anywhere in the world.</p>
+    <a href="#courses" class="btn">View Courses</a>
+  </section>
+
+  <section id="courses">
+    <h2>Available Courses</h2>
+    <div class="course">
+      <h3>Complete Music Theory</h3>
+      <p>Learn the fundamentals and advanced concepts of music theory.</p>
+      <p><strong>Price:</strong> ₦25,000</p>
+      <a href="https://wa.me/2348074337109?text=I'm%20interested%20in%20purchasing%20the%20Complete%20Music%20Theory%20course" class="btn">Pay via Bank Transfer</a>
+    </div>
+    <div class="course">
+      <h3>Music Production Masterclass</h3>
+      <p>Step-by-step guide to producing professional music tracks.</p>
+      <p><strong>Price:</strong> ₦35,000</p>
+      <a href="https://wa.me/234XXXXXXXXXX?text=I'm%20interested%20in%20purchasing%20the%20Music%20Production%20course" class="btn">Pay via Bank Transfer</a>
+    </div>
+
+    <h3>Register for a Course</h3>
+    <form id="registration-form">
+      <label for="name">Full Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="course-select">Select Course:</label><br />
+      <select id="course-select" name="course" required>
+        <option value="" disabled selected>Select a course</option>
+        <option value="Complete Music Theory">Complete Music Theory</option>
+        <option value="Music Production Masterclass">Music Production Masterclass</option>
+      </select><br /><br />
+
+      <button type="submit" class="btn">Register</button>
+    </form>
+
+    <div id="form-message" style="margin-top: 1rem; font-weight: bold;"></div>
+  </section>
+
+  <section id="about">
+    <h2>About the Instructor</h2>
+    <p>I’m [Customer's Name], a passionate music educator and producer with over 10 years of experience in teaching and creating music.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact / Payment Info</h2>
+    <p>For bank transfers, use the following account:</p>
+    <ul>
+      <li><strong>Bank:</strong> Access Bank</li>
+      <li><strong>Account Name:</strong> [Customer's Name]</li>
+      <li><strong>Account Number:</strong> 1234567890</li>
+    </ul>
+    <p>Send payment confirmation via WhatsApp or email.</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/234XXXXXXXXXX">Chat Now</a></p>
+    <p><strong>Email:</strong> example@email.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Music Mastery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
