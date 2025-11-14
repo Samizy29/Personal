@@ -77,7 +77,7 @@ header {
 }
 
 .service-card, .portfolio-item {
-    background: white;
+    background: blue;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
