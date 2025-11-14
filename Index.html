@@ -1,130 +1,74 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Music Mastery Courses</title>
-  <link rel="stylesheet" href="music.js/Music.js" />]
-  <link rel="stylesheet" href="style.css/Music.css" />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Creative Agency</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Music Mastery</h1>
-    <nav>
-    <button id="menu" aria-label="Toggle Menu">☰</button>
-    <nav class="navigation" aria-label="Main Navigation">
-    <a href="#">Home</a>
-    <a href="#">Courses</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <nav class="container">
+            <h1 class="logo">Samuel Agency</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="home">
-    <h2>Unlock Your Musical Potential</h2>
-    <p>Join our online music courses and master music theory, production, and instruments from anywhere in the world.</p>
-    <a href="courses" class="btn">View Courses</a>
-  </section>
+    <section id="home" class="hero">
+        <div class="hero-text container">
+            <h2>We Build Stunning Digital Experiences</h2>
+            <p>Your vision, our creativity — bringing ideas to life with clean code and modern design.</p>
+            <button onclick="scrollToSection('services')" class="cta-btn">Explore Services</button>
+        </div>
+    </section>
 
-  <section id="courses">
-    <h2>Available Courses</h2>
-    <div class="course">
-      <h3>Complete Music Theory</h3>
-      <p>Learn the fundamentals and advanced concepts of music theory.</p>
-      <p><strong>Price:</strong> ₦25,000</p>
-      <a href="https://wa.me/2348074337109" class="btn">Pay via Bank Transfer</a>
-    </div>
-    <div class="course">
-      <h3>Music Production Masterclass</h3>
-      <p>Step-by-step guide to producing professional music tracks.</p>
-      <p><strong>Price:</strong> ₦35,000</p>
-      <a href="https://wa.me/2348074337109" class="btn">Pay via Bank Transfer</a>
-    </div>
+    <section id="services" class="services container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Frontend Development</h3>
+                <p>Modern, responsive websites with clean code and smooth animations.</p>
+            </div>
+            <div class="service-card">
+                <h3>UI/UX Design</h3>
+                <p>Beautiful and user-centered design that keeps users engaged.</p>
+            </div>
+            <div class="service-card">
+                <h3>Brand Identity</h3>
+                <p>Logos, color palettes, and brand voice to represent your business perfectly.</p>
+            </div>
+        </div>
+    </section>
 
-    <h3>Register for a Course</h3>
-    <form id="registration-form">
-      <label for="name">Full Name:</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
+    <section id="portfolio" class="portfolio container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">Project 1</div>
+            <div class="portfolio-item">Project 2</div>
+            <div class="portfolio-item">Project 3</div>
+            <div class="portfolio-item">Project 4</div>
+        </div>
+    </section>
 
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
+    <section id="contact" class="contact container">
+        <h2 class="section-title">Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
 
-      <label for="course-select">Select Course:</label><br />
-      <select id="course-select" name="course" required>
-        <option value="" disabled selected>Select a course</option>
-        <option value="Complete Music Theory">Complete Music Theory</option>
-        <option value="Music Production Masterclass">Music Production Masterclass</option>
-      </select><br /><br />
+    <footer>
+        <p>© 2025 Samuel Creative Agency • All Rights Reserved</p>
+    </footer>
 
-      <button type="submit" class="btn">Register</button>
-    </form>
-
-    <div id="form-message" style="margin-top: 1rem; font-weight: bold;"></div>
-  </section>
-
-  <section id="about">
-    <h2>About the Instructor</h2>
-    <p>I’m [Customer's Name], a passionate music educator and producer with over 10 years of experience in teaching and creating music.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact / Payment Info</h2>
-    <p>For bank transfers, use the following account:</p>
-    <ul>
-      <li><strong>Bank:</strong> Access Bank</li>
-      <li><strong>Account Name:</strong> [Customer's Name]</li>
-      <li><strong>Account Number:</strong> 1234567890</li>
-    </ul>
-    <p>Send payment confirmation via WhatsApp or email.</p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/2348074337109">Chat Now</a></p>
-    <p><strong>Email:</strong> onisamuel73@gmail.com</p>
-  </section>
-
-  <footer>
-  <div class="footer-container">
-    <div class="footer-column">
-      <h3>Our Courses</h3>
-      <ul>
-        <li>Music Theory</li>
-        <li>Music Production</li>
-        <li>Live Performance</li>
-        <li>Songwriting</li>
-        <li>Instrumental Skills</li>
-      </ul>
-    </div>
-
-    <div class="footer-column">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#about">About the Instructor</a></li>
-        <li><a href="#contact">Contact / Payment</a></li>
-        <li><a href="#registration-form">Register</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-column">
-      <h3>Connect</h3>
-      <ul>
-        <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-        <li><a href="#"><i class="fas fa-envelope"></i> Email</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2025 Music Mastery. Crafted with 🎶 by Samuel Akintola Oni.</p>
-  </div>
-</footer>
-
-  <script src="music.js/Music.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
